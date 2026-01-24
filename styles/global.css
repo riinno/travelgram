@@ -24,14 +24,16 @@
   --lt-spacing: -2.5px;
   --lt-h1-spacing: -5px;
 
-  --nav-btn-lines: 0.7rem;
+  --nav-height-lines: 0.7rem;
 }
 
 .container 
 {
   margin-inline: 32px;
+  margin: auto;
 
   background-color: var(--surface-color);
+  max-width: 1280px;
 }
 
 body 
@@ -39,8 +41,6 @@ body
   font: var(--text);
   color: var(--text-color-secondary);
   background-color: var(--bg-color);
-
-  max-width: 1280px;
 }
 
 a 
@@ -48,5 +48,5 @@ a
   text-decoration: none;
   color: inherit;
 
-  width: max-content;
+  /* width: max-content; */
 }
