@@ -1,6 +1,25 @@
-nav h1 
+nav 
 {
-  letter-spacing: var(--lt-h1-spacing);
-  font: var(--text-lg);
-  font-size: 64px;
+  display: flex;
+  
+  justify-content: space-between;
+  padding-block: 20px;
+
+  line-height: 0;
+}
+
+nav ul 
+{
+  display: flex;
+  
+  align-items: center;
+  gap: 24px;
+
+  list-style: none;
+}
+
+nav ul li:last-child img 
+{
+  width: 40px;
+  height: 40px;
 }
