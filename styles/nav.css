@@ -1,1 +1,6 @@
-arquivo para o navigator
+nav h1 
+{
+  letter-spacing: var(--lt-h1-spacing);
+  font: var(--text-lg);
+  font-size: 64px;
+}
