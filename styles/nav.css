@@ -18,8 +18,64 @@ nav ul
   list-style: none;
 }
 
-nav ul li:last-child img 
+nav ul li:last-child img
 {
   width: 40px;
   height: 40px;
 }
+
+/* --------------------------------------- */
+/* "a" que não possui img */
+
+nav ul li a:not(:has(> img))
+{
+  color: inherit;
+
+  transition: color 200ms ease-out 50ms;
+}
+
+nav ul li a:not(:has(> img)):hover
+{
+  color: var(--brand-color);
+}
+
+/* ------------------------------------------------------ */
+/* pseudo objetos para lines de "a" sem img do navigation */
+
+nav ul li a:not(:has(> img))::after,
+nav ul li a:not(:has(> img))::before
+{
+  content: "";
+
+  display: flex;
+
+  background-color: var(--brand-color);
+  width: 100%;
+  height: 1px;
+
+  position: relative;
+  bottom: calc(var(--nav-btn-lines) + 0.7rem);
+
+  opacity: 0%;
+
+  transition: all 200ms ease 50ms;
+}
+
+nav ul li a:not(:has(> img))::before 
+{
+  top: calc(var(--nav-btn-lines) + 0.7rem);
+}
+
+nav ul li a:not(:has(> img)):hover::after,
+nav ul li a:not(:has(> img)):hover::before 
+{
+  opacity: 100%;
+  bottom: var(--nav-btn-lines);
+}
+
+nav ul li a:not(:has(> img)):hover::before
+{
+  top: var(--nav-btn-lines);
+}
+
+/* ------------------------------------------------------ */
