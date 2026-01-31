@@ -42,6 +42,11 @@ a
   /* width: max-content; */
 }
 
+ul
+{
+  list-style: none;
+}
+
 .container 
 {
   padding-inline: 32px;

@@ -16,8 +16,6 @@ nav ul
   align-items: center;
   gap: 24px;
   padding-block: 8px;
-
-  list-style: none;
 }
 
 nav ul li:last-child img
