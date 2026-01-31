@@ -27,15 +27,6 @@
   --nav-height-lines: 0.7rem;
 }
 
-.container 
-{
-  margin-inline: 32px;
-  margin: auto;
-
-  background-color: var(--surface-color);
-  max-width: 1280px;
-}
-
 body 
 {
   font: var(--text);
@@ -49,4 +40,17 @@ a
   color: inherit;
 
   /* width: max-content; */
+}
+
+.container 
+{
+  padding-inline: 32px;
+  margin-inline: auto;
+
+  max-width: 1280px;
+}
+
+.bg-surface-color
+{
+  background-color: var(--surface-color);
 }

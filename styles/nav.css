@@ -62,7 +62,7 @@ nav ul li a:not(:has(> img))::before
   height: 2px;
 
   position: relative;
-  bottom: calc(var(--nav-height-lines) * 2);
+  bottom: calc(var(--nav-height-lines) * 3);
 
   opacity: 0%;
 
@@ -71,7 +71,7 @@ nav ul li a:not(:has(> img))::before
 
 nav ul li a:not(:has(> img))::before 
 {
-  top: calc(var(--nav-height-lines) * 2);
+  top: calc(var(--nav-height-lines) * 3);
 }
 
 nav ul li a:not(:has(> img)):hover::after,
