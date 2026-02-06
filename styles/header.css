@@ -17,6 +17,11 @@ header #profile
   gap: 32px;
 }
 
+header #profile img
+{
+  object-fit: none;
+}
+
 header #profile #text-profile
 {
   display: flex;
