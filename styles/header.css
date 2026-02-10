@@ -19,7 +19,10 @@ header #profile
 
 header #profile img
 {
-  object-fit: none;
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 header #profile #text-profile
